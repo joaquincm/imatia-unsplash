@@ -1,0 +1,44 @@
+body {
+    background-color: rgb(21, 40, 54);
+}
+
+#header {
+    color: #fff;
+    padding: 50px 0 20px 0;
+}
+
+#main-logo {
+    width: 350px;
+    margin-bottom: 20px;
+}
+
+#imagenes-container {
+    display: none;
+}
+
+
+#search-image {
+    background-color: steelblue;
+    border-color: steelblue;
+}
+
+.contenedor-imagenes {
+
+    column-count: 4;
+    column-gap: 10px;
+
+}
+
+figure {
+    margin: 0;
+    display: grid;
+    grid-template-rows: 1fr auto;
+    margin-bottom: 10px;
+    break-inside: avoid;
+}
+
+figure a img {
+    grid-row: 1 / -1;
+    grid-column: 1;
+    max-width: 250px;
+}
